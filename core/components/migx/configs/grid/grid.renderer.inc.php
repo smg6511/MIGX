@@ -85,7 +85,7 @@ renderCrossTick : function(val, md, rec, row, col, s) {
         case '':
         case null:
         case false:
-            renderImage = '/assets/components/migx/style/images/cross.png';
+            renderImage = MODx.config.assets_url+'components/migx/style/images/cross.png';
             handler = 'this.publishObject';
             classname = 'publish';
             altText = 'No';
@@ -93,7 +93,7 @@ renderCrossTick : function(val, md, rec, row, col, s) {
         case 1:
         case '1':
         case true:
-            renderImage = '/assets/components/migx/style/images/tick.png';
+            renderImage = MODx.config.assets_url+'components/migx/style/images/tick.png';
             handler = 'this.unpublishObject';
             classname = 'unpublish';
             altText = 'Yes';
@@ -113,7 +113,7 @@ renderClickCrossTick : function(val, md, rec, row, col, s) {
         case '':
         case null:
         case false:
-            renderImage = '/assets/components/migx/style/images/cross.png';
+            renderImage = MODx.config.assets_url+'components/migx/style/images/cross.png';
             handler = 'this.publishObject';
             classname = 'unpublished';
             altText = 'No';
@@ -121,7 +121,7 @@ renderClickCrossTick : function(val, md, rec, row, col, s) {
         case 1:
         case '1':
         case true:
-            renderImage = '/assets/components/migx/style/images/tick.png';
+            renderImage = MODx.config.assets_url+'components/migx/style/images/tick.png';
             handler = 'this.unpublishObject';
             classname = 'published';
             altText = 'Yes';
@@ -224,7 +224,7 @@ renderOptionSelector : function(val, md, rec, row, col, s) {
     //var column = this.getColumnModel().getColumnAt(col);
     //var ro = Ext.util.JSON.decode(rec.json[column.dataIndex+'_ro']);
     var renderImage, altText, handler, classname;
-    renderImage = '/assets/components/migx/style/images/tick.png';
+    renderImage = MODx.config.assets_url+'components/migx/style/images/tick.png';
     handler = 'this.selectSelectorOption';
     classname = 'test';
     altText = 'test';
